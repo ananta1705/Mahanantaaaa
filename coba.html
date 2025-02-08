@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nusantara Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Seluruh Nusantara Sedang Menunggu</h1>
+        </div>
+    </header>
+
+    <!-- Destinations -->
+    <section class="container">
+        <h2>Destinasi Pantai Populer</h2>
+        <div class="destinations">
+            <div class="card">
+                <img src="omah.jpg" alt="Omah Ngapung">
+                <h3>Omah Ngapung</h3>
+                <p class="rating">⭐ 4.7</p>
+                <p class="price">IDR 88,952 per person</p>
+            </div>
+            <div class="card">
+                <img src="slamet.jpg" alt="Slamet">
+                <h3>Slamet</h3>
+                <p class="rating">⭐ 4.9</p>
+                <p class="price">IDR 88,952 per person</p>
+            </div>
+            <div class="card">
+                <img src="jawa.jpg" alt="Jawa Island">
+                <h3>Jawa Island</h3>
+                <p class="rating">⭐ 4.5</p>
+                <p class="price">IDR 88,952 per person</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore">
+        <h2>JELAJAHI ALAM NUSANTARA</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+        <button class="cta">Lihat Semua</button>
+    </section>
+</body>
+</html>
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 500px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+.destinations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.explore {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.cta {
+    background: white;
+    color: #007BFF;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
